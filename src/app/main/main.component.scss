@@ -1,0 +1,7 @@
+@import "../../assets/scss/animation.scss";
+
+.main-container {
+    margin: 0 auto;
+    -webkit-animation: fade-in-main 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) forwards;
+    animation: fade-in-main 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) forwards;
+}

@@ -1,0 +1,48 @@
+.method-container {
+    display: flex;
+    gap: 25px;
+    padding: 60px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .elements-left {
+
+        .text-p {
+            max-width: 395px;
+            line-height: 20px;
+        }
+    }
+
+    .elements-right {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        margin: 0 30px;
+
+        .info-box {
+            display: flex;
+            flex-direction: column;
+            gap: 17px;
+
+            .load-container {
+                display: flex;
+                gap: 15px;
+
+                .load {
+                    background: #6EE8C8;
+                    background: linear-gradient(268deg, #FFF 14%, #6EE8C8 100%);
+                    max-width: 305px;
+                    min-height: 100px;
+                    height: 12px;
+                    border-radius: 50px;
+                }
+            }
+
+            .text-p {
+                max-width: 395px;
+                line-height: 20px;
+                font-weight: 300;
+            }
+        }
+    }
+}

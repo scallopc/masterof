@@ -1,0 +1,45 @@
+@import "../../../assets/scss/animation.scss";
+
+.if-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 25px;
+    padding: 20px 40px 0;
+    align-items: end;
+    position: relative;
+
+    .img-if {
+        width: 400px;
+        -webkit-animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+
+    .if-info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 20px;
+        -webkit-animation: text-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) forwards;
+        animation: text-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) forwards;
+
+
+        .text-info-detail {
+            gap: 15px;
+            max-width: 520px;
+
+            .title-20 {
+                .if-text-detail {
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 725.98px) {
+    .if-container {
+        .img-if {
+            display: none;
+        }
+    }
+}
