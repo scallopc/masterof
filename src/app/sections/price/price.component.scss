@@ -1,0 +1,31 @@
+.price-container {
+    background: linear-gradient(180deg, #6948CD 0%, #6165DD 100%);
+
+    .price {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 40px 40px 70px;
+        gap: 15px;
+        justify-content: center;
+
+        .info-box {
+            max-width: 260px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            .title {
+                font-size: 40px;
+                border-bottom: 5px solid #6EE8C8;
+
+                .title-detail {
+                    font-size: 40px;
+                }
+            }
+
+            .text-p {
+                color: #FFF;
+            }
+        }
+    }
+}

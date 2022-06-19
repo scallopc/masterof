@@ -7,7 +7,8 @@
     padding: 20px 40px 0;
     align-items: end;
     position: relative;
-
+    justify-items: center;
+    
     .img-if {
         width: 400px;
         -webkit-animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
@@ -26,7 +27,9 @@
         .text-info-detail {
             gap: 15px;
             max-width: 520px;
-
+            display: flex;
+            flex-direction: column;
+            
             .title-20 {
                 .if-text-detail {
                     font-size: 50px;

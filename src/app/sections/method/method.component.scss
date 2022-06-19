@@ -1,16 +1,17 @@
+
 .method-container {
     display: flex;
     gap: 25px;
-    padding: 60px 0;
+    padding: 60px 40px;
     flex-wrap: wrap;
     justify-content: center;
 
     .elements-left {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
 
-        .text-p {
-            max-width: 395px;
-            line-height: 20px;
-        }
     }
 
     .elements-right {
@@ -22,27 +23,70 @@
         .info-box {
             display: flex;
             flex-direction: column;
-            gap: 17px;
+            gap: 10px;
 
             .load-container {
                 display: flex;
-                gap: 15px;
+                align-items: center;
 
                 .load {
                     background: #6EE8C8;
-                    background: linear-gradient(268deg, #FFF 14%, #6EE8C8 100%);
-                    max-width: 305px;
-                    min-height: 100px;
+                    background: linear-gradient(268deg, transparent 14%, #6EE8C8 100%);
                     height: 12px;
                     border-radius: 50px;
+
+                    &.load-60 {
+                        width: 300px;
+                    }
+
+                    &.load-10 {
+                        width: 138px;
+                    }
+
+                    &.load-30 {
+                        width: 218px;
+                    }
                 }
             }
 
             .text-p {
-                max-width: 395px;
-                line-height: 20px;
                 font-weight: 300;
             }
+        }
+    }
+}
+
+
+@media (max-width: 575.98px) {
+    .method-container {
+
+        .elements-left {
+            .text-p {
+               max-width: 300px;
+            }
+        }
+        .elements-right {
+
+            .info-box {
+
+                .load-container {
+                    .load {
+                        &.load-60 {
+                            width: 250px;
+                        }
+
+                        &.load-10 {
+                            width: 120px;
+                        }
+
+                        &.load-30 {
+                            width: 180px;
+                        }
+                    }
+                }
+            }
+
+
         }
     }
 }

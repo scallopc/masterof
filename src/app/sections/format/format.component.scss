@@ -1,0 +1,45 @@
+.format-container {
+    display: flex;
+    gap: 25px;
+    padding: 60px 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .elements-left {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+
+        .p-text {
+            max-width: 315px;
+        }
+
+    }
+
+    .elements-right {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        margin: 0 30px;
+
+        .info-box {
+            display: flex;
+            gap: 30px;
+            justify-content: space-between;         
+        }
+
+        .info-box-detail {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 6px;
+            max-width: 365px;
+            margin-top: 10px;
+
+            span {
+                margin-right: 5px;
+            }
+        }
+    }
+}

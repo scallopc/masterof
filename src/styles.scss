@@ -43,12 +43,14 @@ html body {
         margin: 0 auto;
     }
 
-    .text-90 {
+    .text-24 {
         font-size: 24px;
         font-weight: 600;
-        //transform: rotate(90deg);
         line-height: 32px;
         color: #fff;
+    }
+
+    .text-90 {
         -webkit-animation: rotate-in-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         animation: rotate-in-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
@@ -56,14 +58,28 @@ html body {
     .title {
         font-size: 50px;
         font-weight: 600;
-        color: #6EE8C8;
         line-height: 70px;
 
         .title-detail {
             font-size: 50px;
             font-weight: 300;
-            color: #6EE8C8;
         }
+    }
+
+
+    .text-p {
+        max-width: 395px;
+        line-height: 20px;
+        -webkit-animation: text-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) forwards;
+        animation: text-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) forwards;
+    }
+
+    .text-12 {
+      font-size: 12px;
+      max-width: 375px;
+      font-weight: 300;
+        -webkit-animation: text-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) forwards;
+        animation: text-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) forwards;
     }
 
     .title-20 {
@@ -76,11 +92,16 @@ html body {
     }
 
     .t-color-primary {
-        color:#6EE8C8 ;
+        color: $primary;
     }
 
     .t-color-secondary {
-        color: #6948CD;
+        color: $primary-2;
+    }
+
+    .t-color-secondary-2 {
+        color: $secondary-2;
+        font-weight: 500;
     }
 
     .t-30 {
@@ -153,4 +174,14 @@ input {
     font-size: inherit;
     font-weight: inherit;
     font-family: inherit;
+}
+
+
+
+@media (max-width: 575.98px) {
+    html body {
+        .title {
+            font-size: 40px;
+        }
+    }
 }

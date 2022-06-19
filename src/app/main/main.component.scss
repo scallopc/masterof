@@ -4,4 +4,29 @@
     margin: 0 auto;
     -webkit-animation: fade-in-main 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) forwards;
     animation: fade-in-main 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) forwards;
+    position: relative;
+
+    .btns-container {
+        display: flex;
+        gap: 15px;
+        position: sticky;
+        justify-content: flex-end;
+        padding: 20px;
+
+        .btn-primary {
+            display: flex;
+            gap: 10px;
+
+            &.more {
+                background-color: #627CE5;
+                position: sticky;
+
+                &:hover {
+                    background-color: #334cb1;
+                }
+            }
+
+
+        }
+    }
 }

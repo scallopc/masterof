@@ -1,0 +1,38 @@
+.background-img {
+    background-image: url(../../../assets/img/imagem04.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.concept-container {
+    padding: 60px 40px;
+    
+    .title-container {
+        display: flex;
+        gap: 30px;
+        padding-bottom: 60px;
+        flex-wrap: wrap;
+        
+        .title {
+            width: 550px;
+            text-align: center;
+        }
+
+    }
+
+    
+    .content {
+        display: flex;
+        gap: 10px;
+
+        .number-info {
+            font-size: 30px;
+            color: #fff;
+            font-weight: 300;
+            align-self: baseline;
+        }
+
+       
+    }
+
+}

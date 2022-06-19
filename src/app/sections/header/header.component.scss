@@ -12,7 +12,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px 60px;
+        padding: 60px 40px;
 
         .img-log {
             width: 175px;
@@ -29,15 +29,8 @@
 
                 &:hover {
                     color: #6EE8C8;
-                    border-bottom: 1px solid #6EE8C8;
                 }
             }
-
-            .link--ativo {
-                color: #6EE8C8;
-                border-bottom: 1px solid #6EE8C8;
-            }
-
         }
 
     }
@@ -76,6 +69,9 @@
                 .text-header-row {
                     color: #fff;
                     font-size: 14px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
                 }
 
                 .t-strong {
