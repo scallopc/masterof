@@ -1,0 +1,27 @@
+/*.btns-container {
+    position: fixed;
+    z-index: 999999;
+    right: 5%;
+
+    .btns {
+        display: flex;
+        gap: 15px;
+        justify-content: flex-end;
+        padding: 20px;
+
+        .btn-primary {
+            display: flex;
+            gap: 10px;
+
+            &.more {
+                background-color: #627CE5;
+
+                &:hover {
+                    background-color: #334cb1;
+                }
+            }
+
+
+        }
+    }
+}*/

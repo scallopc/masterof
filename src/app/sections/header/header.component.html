@@ -2,7 +2,7 @@
 
     <div class="header container-fix">
         <img src="../../../assets/img/logo-master.png" alt="logo-masterOfScience" class="img-log">
-        <nav class="menu">
+        <nav class="menu menu-desk">
             <a href="" class="menu-link">Sobre</a>
             <a href="" class="menu-link">Programa</a>
             <a href="" class="menu-link">Metodologia</a>
@@ -11,6 +11,20 @@
             <a href="" class="menu-link">Preço</a>
             <a href="" class="menu-link">Registro</a>
         </nav>
+
+        <i (click)="showMenuMobile()" [ngClass]="menuMobile == true ? '' : 'bi bi-list' "></i>
+
+        <nav class="menu menu-mobile" *ngIf="menuMobile">
+            <i *ngIf="menuMobile" (click)="closeMenuMobile()"  class="bi-x-circle"></i>
+            <a href="" class="menu-link">Sobre</a>
+            <a href="" class="menu-link">Programa</a>
+            <a href="" class="menu-link">Metodologia</a>
+            <a href="" class="menu-link">Conceito</a>
+            <a href="" class="menu-link">Formato</a>
+            <a href="" class="menu-link">Preço</a>
+            <a href="" class="menu-link">Registro</a>
+        </nav>
+
     </div>
 
     <div class="header-info container-fix">
@@ -25,4 +39,5 @@
         </div>
         <img src="../../../assets/img/imagem01.png" alt="imagem01" class="img-header">
     </div>
+
 </div>

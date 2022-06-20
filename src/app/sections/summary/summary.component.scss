@@ -11,17 +11,26 @@
         flex-wrap: wrap;
         gap: 50px;
 
-    .elements-right {
-        display: flex;
-        gap: 15px;
-        flex-direction: column;
-        flex-wrap: wrap;
-
-        .info-box {
+        .elements-right {
             display: flex;
-            gap: 10px;
-            font-weight: 500;        
+            gap: 15px;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            .info-box {
+                display: flex;
+                gap: 10px;
+                font-weight: 500;
+            }
         }
     }
 }
+
+@media (max-width: 575.98px) {
+    .summary-container {
+        .elements-align {
+            gap: 10px;
+    
+        }
+    }
 }
